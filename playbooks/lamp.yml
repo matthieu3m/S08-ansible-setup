@@ -1,0 +1,11 @@
+---
+- name: Déploiement d'Apache
+  hosts: all
+  roles:
+    - httpd
+
+- name: Déploiement de la BD MySQL
+  hosts: all
+  roles:
+    - mysql
+    

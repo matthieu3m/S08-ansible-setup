@@ -1,9 +1,11 @@
 ---
 - name: Install apache
-    ansible.builtin.apt:
-      name: apache2
-      state: present
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+
 - name: ensure nginx is not here
-    ansible.builtin.apt:
-      name: nginx
-      state: absent
+  ansible.builtin.apt:
+    name: nginx
+    state: absent
+    
